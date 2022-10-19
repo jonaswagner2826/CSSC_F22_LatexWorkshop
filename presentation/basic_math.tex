@@ -1,0 +1,322 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Typesetting Mathematics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{}: Dollar Signs}
+    \begin{itemize}
+        \item Why are dollar signs \keystrokebftt{\$} special? We use them to mark mathematics in text.\\[1ex]
+              \begin{figure}
+                  \begin{minipage}{0.5\textwidth}
+                      \begin{lstlisting}
+% not so good:
+Let a and b be distinct positive
+integers, and let c = a - b + 1.
+
+% much better:
+Let $a$ and $b$ be distinct positive
+integers, and let $c = a - b + 1$.
+                    \end{lstlisting}
+                  \end{minipage}
+                  \begin{minipage}{0.35\textwidth}
+                      % not so good:
+                      Let a and b be distinct positive
+                      integers, and let c = a - b + 1.
+
+                      % much better:
+                      Let $a$ and $b$ be distinct positive
+                      integers, and let $c = a - b + 1$.
+                  \end{minipage}
+              \end{figure}
+        \item Always use dollar signs in pairs --- one to begin the mathematics, and one
+              to end it.
+        \item \LaTeX{} handles spacing automatically; it ignores your spaces.
+              \begin{table}
+                  \begin{tabular}{cl}
+                      \verb|Let $y=mx+b$ be \ldots|      & Let $y=mx+b$ be \ldots      \\
+                      \verb|Let $y = m x + b$ be \ldots| & Let $y = m x + b$ be \ldots
+                  \end{tabular}
+              \end{table}
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{}: Notation}
+    \begin{itemize}
+        \item Use caret \keystrokebftt{\^} for superscripts and underscore \keystrokebftt{\_} for subscripts.
+              \begin{table}
+                  % \centering
+                  \begin{tabular}{c|l}
+                      \verb|$y = c_2 x^2 + c_1 x + c_0$| & $y = c_2 x^2 + c_1 x + c_0$
+                  \end{tabular}
+              \end{table}
+
+              \vskip 2ex
+
+        \item Use curly braces \keystrokebftt{ \{ } \keystrokebftt{ \} } to group
+              superscripts and subscripts.
+              \begin{table}
+                  % \centering
+                  \begin{tabular}{c|l}
+                      \verb|$F_n = F_n-1 + F_n-2$|       & $F_n = F_n-1 + F_n-2$       \\
+                      \verb|$F_{n} = F_{n-1} + F_{n-2}$| & $F_{n} = F_{n-1} + F_{n-2}$
+                  \end{tabular}
+              \end{table}
+
+        \item There are commands for Greek letters and common notation.
+              \begin{table}
+                  % \centering
+                  \begin{tabular}{c|l}
+                      \verb|$\mu = A e^{Q/RT}$|                 & $\mu = A e^{Q/RT}$                 \\
+                      \verb|$\Omega = \sum_{k=1}^{n} \omega_k$| & $\Omega = \sum_{k=1}^{n} \omega_k$
+                  \end{tabular}
+              \end{table}
+
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{}: Displayed Equations}
+    \begin{itemize}
+        \item If it's big and scary, \emph{display} it on its own line using
+              \cmdbegin{equation} and \cmdend{equation}.\\[2ex]
+              \begin{figure}
+                  \begin{minipage}{0.45\textwidth}
+                      \begin{lstlisting}
+The roots of a quadratic 
+equation are given by
+\begin{equation}
+    x = \frac{
+        -b \pm \sqrt{b^2 - 4ac}
+        }{2a}
+\end{equation}
+where $a$, $b$ and $c$ are \ldots
+            \end{lstlisting}
+                  \end{minipage}
+                  \begin{minipage}{0.4\textwidth}
+                      The roots of a quadratic equation
+                      are given by
+                      \begin{equation}
+                          x = \frac{-b \pm \sqrt{b^2 - 4ac}}
+                          {2a}
+                      \end{equation}
+                      where $a$, $b$ and $c$ are \ldots
+                  \end{minipage}
+              \end{figure}
+              \vskip 1em
+                  {\scriptsize Caution: \LaTeX{} mostly ignores your spaces in mathematics, but it
+                      can't handle blank lines in equations --- don't put blank lines in your
+                      mathematics.}
+    \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Extended \LaTeX}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{}: Environments}
+    \begin{itemize}
+        \item \bftt{equation} is an \emph{environment} --- a context.
+        \item A command can produce different output in different contexts.
+
+              \begin{figure}
+                  \begin{minipage}{0.5\textwidth}
+                      \begin{lstlisting}
+We can write
+$ \Omega = \sum_{k=1}^{n} \omega_k $
+in text, or we can write
+\begin{equation}
+    \Omega = \sum_{k=1}^{n} \omega_k
+\end{equation}
+to display it.
+                \end{lstlisting}
+                  \end{minipage}
+                  %   \quad
+                  \begin{minipage}{0.4\textwidth}
+                      We can write
+                      $ \Omega = \sum_{k=1}^{n} \omega_k $
+                      in text, or we can write
+                      \begin{equation}
+                          \Omega = \sum_{k=1}^{n} \omega_k
+                      \end{equation}
+                      to display it.
+                  \end{minipage}
+              \end{figure}
+              \vskip 2ex
+        \item Note how the $\Sigma$ is bigger in the \bftt{equation} environment, and how the subscripts and superscripts change position, even though we used the same commands.
+
+                  %   \vskip 1em
+                  {\scriptsize In fact, we could have written \bftt{\$...\$} as
+                      \cmdbegin{math}\bftt{...}\cmdend{math}.}
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{}: Environments}
+    \begin{itemize}
+        \item The \cmdbs{begin} and \cmdbs{end} commands are used to create many
+              different environments.
+              \vskip 2ex
+
+        \item The \bftt{itemize} and \bftt{enumerate} environments generate lists.
+
+              \begin{figure}
+                  \begin{minipage}{0.5\textwidth}
+                      \begin{lstlisting}
+\begin{itemize} % for bullet points
+\item Biscuits
+\item Tea
+\end{itemize}
+
+\begin{enumerate} % for numbers
+\item Biscuits
+\item Tea
+\end{enumerate}
+            \end{lstlisting}
+                  \end{minipage}
+                  \begin{minipage}{0.4\textwidth}
+                      \begin{itemize} % for bullet points
+                          \item Biscuits
+                          \item Tea
+                      \end{itemize}
+
+                      \begin{enumerate} % for numbers
+                          \item Biscuits
+                          \item Tea
+                      \end{enumerate}
+                  \end{minipage}
+              \end{figure}
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{}: Packages}
+
+    \begin{itemize}
+        \item All of the commands and environments we've used so far are built into \LaTeX.
+        \item \emph{Packages} are libraries of extra commands and environments. There
+              are thousands of freely available packages.
+        \item We have to load each of the packages we want to use with a
+              \cmdbs{usepackage} command in the \emph{preamble}.
+        \item Example: \bftt{amsmath} from the American Mathematical Society.
+              \begin{lstlisting}
+\documentclass{article}
+\usepackage{amsmath} % preamble
+\begin{document}
+% now we can use commands from amsmath here...
+\end{document}
+            \end{lstlisting}
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{amsmath Package}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile, allowframebreaks]{\insertsubsection{}: Examples}
+    \begin{itemize}
+        \item Use \bftt{equation*} (``equation-star'') for unnumbered equations.
+              \begin{figure}
+                  \begin{minipage}{0.5\textwidth}
+                      \begin{lstlisting}
+\begin{equation*}
+    \Omega = \sum_{k=1}^{n} \omega_k
+\end{equation*}
+        \end{lstlisting}
+                  \end{minipage}
+                  \begin{minipage}{0.4\textwidth}
+                      \begin{equation*}
+                          \Omega = \sum_{k=1}^{n} \omega_k
+                      \end{equation*}
+                  \end{minipage}
+              \end{figure}
+        \item \LaTeX{} treats adjacent letters as variables multiplied together, which
+              is not always what you want. \bftt{amsmath} defines commands for many common
+              mathematical operators.
+              \begin{figure}
+                  \begin{minipage}{0.5\textwidth}
+                      \begin{lstlisting}[basicstyle=\scriptsize]
+\begin{equation*} % bad!
+    min_{x,y} (1-x)^2 + 100(y-x^2)^2
+\end{equation*}
+\begin{equation*} % good!
+    \min_{x,y}{(1-x)^2 + 100(y-x^2)^2}
+\end{equation*}
+        \end{lstlisting}
+                  \end{minipage}
+                  \begin{minipage}{0.4\textwidth}
+                      \begin{equation*} % bad!
+                          min_{x,y} (1-x)^2 + 100(y-x^2)^2
+                      \end{equation*}
+                      \begin{equation*} % good!
+                          \min_{x,y}{(1-x)^2 + 100(y-x^2)^2}
+                      \end{equation*}
+                  \end{minipage}
+              \end{figure}
+\vspace{1cm}
+
+{\small 
+        \item You can use \cmdbs{operatorname} for others.
+              \begin{figure}
+                  \begin{minipage}{0.35\textwidth}
+                      \begin{lstlisting}[basicstyle=\tiny]
+\begin{equation*}
+\beta_i =
+\frac{\operatorname{Cov}(R_i, R_m)}
+        {\operatorname{Var}(R_m)}
+\end{equation*}
+        \end{lstlisting}
+                  \end{minipage}
+                  \begin{minipage}{0.4\textwidth}
+                      \begin{equation*}
+                          \beta_i =
+                          \frac{\operatorname{Cov}(R_i, R_m)}
+                          {\operatorname{Var}(R_m)}
+                      \end{equation*}
+                  \end{minipage}
+              \end{figure}
+
+        \item Align a sequence of equations at the equals sign
+            \begin{figure}
+                \begin{minipage}{0.4\textwidth}
+                    \begin{lstlisting}[basicstyle=\scriptsize]
+\begin{align*}
+(x+1)^3 &= (x+1)(x+1)(x+1) \\
+        &= (x+1)(x^2 + 2x + 1) \\
+        &= x^3 + 3x^2 + 3x + 1
+\end{align*}
+        \end{lstlisting}
+                \end{minipage}
+                \begin{minipage}{0.4\textwidth}
+                    \begin{align*}
+                        (x+1)^3 & = (x+1)(x+1)(x+1)     \\
+                                & = (x+1)(x^2 + 2x + 1) \\
+                                & = x^3 + 3x^2 + 3x + 1
+                    \end{align*}
+                \end{minipage}
+            \end{figure}
+        with the \bftt{align*} environment.
+
+        \item An ampersand \keystrokebftt{\&} separates the left column (before the $=$) from the right column (after the $=$).
+        \item A double backslash \keystrokebftt{\bs}\keystrokebftt{\bs} starts a new line.
+              
+        }
+    \end{itemize}
+\end{frame}

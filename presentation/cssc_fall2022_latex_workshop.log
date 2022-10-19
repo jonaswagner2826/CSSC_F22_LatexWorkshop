@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  19 OCT 2022 00:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  19 OCT 2022 01:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -897,27 +897,34 @@ Dictionary: translator-theorem-dictionary, Language: English
 \c@lstlisting=\count361
  (./cssc_fall2022_latex_workshop.nav) [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./cssc_fall2022_latex_workshop.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 1.
  (c:/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-<figs/UT_Dallas_Logo.png, id=88, 487.32062pt x 206.27063pt>
+))
+<figs/UT_Dallas_Logo.png, id=122, 487.32062pt x 206.27063pt>
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 46.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 27.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
  [2
 
- <./figs/UT_Dallas_Logo.png>]
+ <./figs/UT_Dallas_Logo.png>] (./intro.tex
+File: figs/UT_Dallas_Logo.png Graphic file (type png)
+<use figs/UT_Dallas_Logo.png>
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 25.
+(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
+ [3
+
+]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
 
  (./cssc_fall2022_latex_workshop.vrb
@@ -934,15 +941,15 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 )
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 69.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 48.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [3
+ [4
 
 ]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
 
  (./cssc_fall2022_latex_workshop.vrb
-<figs/gerbil.jpg, id=147, 77.088pt x 55.82857pt>
+<figs/gerbil.jpg, id=219, 77.088pt x 55.82857pt>
 File: figs/gerbil.jpg Graphic file (type jpg)
 <use figs/gerbil.jpg>
 Package pdftex.def Info: figs/gerbil.jpg  used on input line 38.
@@ -950,9 +957,9 @@ Package pdftex.def Info: figs/gerbil.jpg  used on input line 38.
 )
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 134.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 113.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [4
+ [5
 
  <./figs/gerbil.jpg>]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
@@ -960,9 +967,9 @@ Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 134.
  (./cssc_fall2022_latex_workshop.vrb)
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 146.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 129.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [5
+ [6
 
 ]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
@@ -982,9 +989,9 @@ LaTeX Font Warning: Font shape `TS1/cmtt/bx/n' undefined
 )
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 172.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 155.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [6
+ [7
 
 ]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
@@ -992,11 +999,25 @@ Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 172.
  (./cssc_fall2022_latex_workshop.vrb)
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 195.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 178.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [7
+ [8
 
 ]
+File: figs/UT_Dallas_Logo.png Graphic file (type png)
+<use figs/UT_Dallas_Logo.png>
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 189.
+(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
+ [9
+
+]) (./cssc_fall2022_latex_workshop.toc)
+File: figs/UT_Dallas_Logo.png Graphic file (type png)
+<use figs/UT_Dallas_Logo.png>
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 62.
+(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
+ [10
+
+] (./basic_math.tex
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
 
  (./cssc_fall2022_latex_workshop.vrb
@@ -1006,9 +1027,9 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 262.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 43.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [8
+ [11
 
 ]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
@@ -1025,37 +1046,7 @@ LaTeX Font Warning: Font shape `OMS/cmtt/bx/n' undefined
 )
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 299.
-(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [9
-
-]
-\openout4 = `cssc_fall2022_latex_workshop.vrb'.
-
- (./cssc_fall2022_latex_workshop.vrb)
-File: figs/UT_Dallas_Logo.png Graphic file (type png)
-<use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 336.
-(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [10
-
-]
-\openout4 = `cssc_fall2022_latex_workshop.vrb'.
-
- (./cssc_fall2022_latex_workshop.vrb)
-File: figs/UT_Dallas_Logo.png Graphic file (type png)
-<use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 376.
-(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [11
-
-]
-\openout4 = `cssc_fall2022_latex_workshop.vrb'.
-
- (./cssc_fall2022_latex_workshop.vrb)
-File: figs/UT_Dallas_Logo.png Graphic file (type png)
-<use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 416.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 80.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
  [12
 
@@ -1065,9 +1056,39 @@ Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 416.
  (./cssc_fall2022_latex_workshop.vrb)
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 438.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 117.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
  [13
+
+]
+\openout4 = `cssc_fall2022_latex_workshop.vrb'.
+
+ (./cssc_fall2022_latex_workshop.vrb)
+File: figs/UT_Dallas_Logo.png Graphic file (type png)
+<use figs/UT_Dallas_Logo.png>
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 162.
+(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
+ [14
+
+]
+\openout4 = `cssc_fall2022_latex_workshop.vrb'.
+
+ (./cssc_fall2022_latex_workshop.vrb)
+File: figs/UT_Dallas_Logo.png Graphic file (type png)
+<use figs/UT_Dallas_Logo.png>
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 202.
+(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
+ [15
+
+]
+\openout4 = `cssc_fall2022_latex_workshop.vrb'.
+
+ (./cssc_fall2022_latex_workshop.vrb)
+File: figs/UT_Dallas_Logo.png Graphic file (type png)
+<use figs/UT_Dallas_Logo.png>
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 224.
+(pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
+ [16
 
 ]
 \openout4 = `cssc_fall2022_latex_workshop.vrb'.
@@ -1076,23 +1097,21 @@ Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 438.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 44.
 )
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 532.
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 532.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 322.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [14
+ [17
 
 ]
 File: figs/UT_Dallas_Logo.png Graphic file (type png)
 <use figs/UT_Dallas_Logo.png>
-Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 532.
+Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 322.
 (pdftex.def)             Requested size: 67.22057pt x 28.45274pt.
- [15
+ [18
 
 
-]
+])
 \tf@nav=\write6
 \openout6 = `cssc_fall2022_latex_workshop.nav'.
 
@@ -1107,21 +1126,21 @@ Package pdftex.def Info: figs/UT_Dallas_Logo.png  used on input line 532.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `cssc_fall2022_latex_workshop.out' has not changed.
-(rerunfilecheck)             Checksum: B687A2A3EDA1A3C9A2B8B892AB28C9B3;165.
+(rerunfilecheck)             Checksum: 5497EC3CA284551A041991EA31781264;1139.
  ) 
 Here is how much of TeX's memory you used:
- 29240 strings out of 478599
- 573345 string characters out of 5858102
- 912154 words of memory out of 5000000
- 46433 multiletter control sequences out of 15000+600000
- 420069 words of font info for 87 fonts, out of 8000000 for 9000
+ 29348 strings out of 478599
+ 575915 string characters out of 5858102
+ 913118 words of memory out of 5000000
+ 46519 multiletter control sequences out of 15000+600000
+ 419606 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,124p,539b,1550s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on cssc_fall2022_latex_workshop.pdf (15 pages, 401651 bytes).
+ 128i,19n,124p,539b,1550s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on cssc_fall2022_latex_workshop.pdf (18 pages, 408252 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
- 32 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 748 PDF objects out of 1000 (max. 8388607)
+ 643 compressed objects within 7 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

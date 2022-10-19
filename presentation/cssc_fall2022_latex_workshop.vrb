@@ -1,4 +1,4 @@
-\frametitle{\insertsubsection {}: Examples with \bftt {amsmath}}
+\frametitle{\insertsubsection {}: Examples}
 \begin{itemize}
         \item Use \bftt{equation*} (``equation-star'') for unnumbered equations.
               \begin{figure}
