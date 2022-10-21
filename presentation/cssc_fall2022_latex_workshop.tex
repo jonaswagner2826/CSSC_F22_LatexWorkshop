@@ -126,10 +126,10 @@
 %     \end{frame}
 
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Structured Documents}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Structured Documents}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -188,16 +188,16 @@
 
 
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Title and Abstract}
-% \begin{frame}[fragile]{\insertsubsection}
-% \begin{itemize}{\small
-% \item Tell \LaTeX{} the \cmdbs{title} and \cmdbs{author} names in the preamble.
-% \item Then use \cmdbs{maketitle} in the document to actually create the title.
-% \item Use the \bftt{abstract} environment to make an abstract.
-% }\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Title and Abstract}
+\begin{frame}[fragile]{\insertsubsection}
+\begin{itemize}{\small
+\item Tell \LaTeX{} the \cmdbs{title} and \cmdbs{author} names in the preamble.
+\item Then use \cmdbs{maketitle} in the document to actually create the title.
+\item Use the \bftt{abstract} environment to make an abstract.
+}\end{itemize}
 % \begin{minipage}{0.55\linewidth}
 % \inputminted[fontsize=\scriptsize,frame=single,resetmargins]{latex}%
 %   {structure-title.tex}
@@ -205,17 +205,18 @@
 % \begin{minipage}{0.35\linewidth}
 % \includegraphics[width=\textwidth,clip,trim=2.2in 7in 2.2in 2in]{structure-title.pdf}
 % \end{minipage}
-% \end{frame}
+\end{frame}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Sections}
-% \begin{frame}{\insertsubsection}
-% \begin{itemize}{\small
-% \item Just use \cmdbs{section} and \cmdbs{subsection}.
-% \item Can you guess what \cmdbs{section*} and \cmdbs{subsection*} do?
-% }\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sections}
+\begin{frame}{\insertsubsection}
+\begin{itemize}{\small
+\item Just use \cmdbs{section} and \cmdbs{subsection}.
+\item Can you guess what \cmdbs{section*} and \cmdbs{subsection*} do?
+}\end{itemize}
 % \begin{minipage}{0.55\linewidth}
 % \inputminted[fontsize=\scriptsize,frame=single,resetmargins]{latex}%
 %   {structure-sections.tex}
@@ -223,7 +224,7 @@
 % \begin{minipage}{0.35\linewidth}
 % \includegraphics[width=\textwidth,clip,trim=1.5in 6in 4in 1in]{structure-sections.pdf}
 % \end{minipage}
-% \end{frame}
+\end{frame}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -287,103 +288,141 @@
 % \end{multicols}
 % \end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Graphics}
-% \begin{frame}[fragile]{\insertsubsection}
-% \begin{itemize}
-% \item Requires the \bftt{graphicx} package, which provides the
-% \cmdbs{includegraphics} command.
-% \item Supported graphics formats include JPEG, PNG and PDF (usually).
-% \end{itemize}
-% \begin{exampletwouptiny}
-% \includegraphics[
-%   width=0.5\textwidth]{gerbil}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Graphics}
+\begin{frame}[fragile]{\insertsubsection}
+\begin{itemize}
+\item Requires the \bftt{graphicx} package, which provides the
+\cmdbs{includegraphics} command.
+\item Supported graphics formats include JPEG, PNG and PDF (usually).
+\end{itemize}
+\begin{figure}
+    % \centering
+    \begin{minipage}{0.5\textwidth}
+        \begin{lstlisting}
+\includegraphics[
+    width=0.5\textwidth]{figs/gerbil}
 
-% \includegraphics[
-%   width=0.3\textwidth,
-%   angle=270]{gerbil}
-% \end{exampletwouptiny}
+\includegraphics[
+    width=0.3\textwidth,
+    angle=270]{figs/gerbil}
+        \end{lstlisting}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[
+            width=0.5\textwidth]{figs/gerbil}
 
-% \tiny{Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
-% \end{frame}
+        \includegraphics[
+            width=0.3\textwidth,
+            angle=270]{figs/gerbil}
+    \end{minipage}
+\end{figure}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}[fragile]{Interlude: Optional Arguments}
-% \begin{itemize}
-% \item We use square brackets \keystrokebftt{[} \keystrokebftt{]} for optional
-% arguments, instead of braces \keystrokebftt{\{} \keystrokebftt{\}}.
-% \item \cmdbs{includegraphics} accepts optional arguments that allow you to transform the
-% image when it is included. For example, \bftt{width=0.3\cmdbs{textwidth}} makes
-% the image take up 30\% of the width of the surrounding text (\cmdbs{textwidth}).
-% \item \cmdbs{documentclass} accepts optional arguments, too. Example:
-% \mint{latex}|\documentclass[12pt,twocolumn]{article}|
-% \vskip 3ex
-% makes the text bigger (12pt) and puts it into two columns.
-% \item Where do you find out about these? See the slides at the end of this
-% presentation for links to more information.
-% \end{itemize}
-% \end{frame}
+\tiny{Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection[fragile]{Floats}
-% \begin{frame}{\insertsubsection}
-% \begin{itemize}
-% \item Allow \LaTeX{} to decide where the figure will go (it can ``float'').
-% \item You can also give the figure a caption, which can be referenced with
-% \cmdbs{ref}.
-% \end{itemize}
-% \begin{minipage}{0.55\linewidth}
-% \inputminted[fontsize=\scriptsize,frame=single,resetmargins]{latex}%
-%   {media-graphics.tex}
-% \end{minipage}
-% \begin{minipage}{0.35\linewidth}
-% \includegraphics[width=\textwidth,clip,trim=2in 5in 3in 1in]{media-graphics.pdf}
-% \end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Interlude: Optional Arguments}
+\begin{itemize}
+\item We use square brackets \keystrokebftt{[} \keystrokebftt{]} for optional
+arguments, instead of braces \keystrokebftt{\{} \keystrokebftt{\}}.
+\item \cmdbs{includegraphics} accepts optional arguments that allow you to transform the
+image when it is included. For example, \bftt{width=0.3\cmdbs{textwidth}} makes
+the image take up 30\% of the width of the surrounding text (\cmdbs{textwidth}).
+\item \cmdbs{documentclass} accepts optional arguments, too. Example:
+\verb|\documentclass[12pt,twocolumn]{article}|
+\vskip 3ex
+makes the text bigger (12pt) and puts it into two columns.
+\item Where do you find out about these? See the slides at the end of this
+presentation for links to more information.
+\end{itemize}
+\end{frame}
 
-% \tiny{Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
-% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection[fragile]{Floats}
+\begin{frame}{\insertsubsection}
+\begin{itemize}
+\item Allow \LaTeX{} to decide where the figure will go (it can ``float'').
+\item You can also give the figure a caption, which can be referenced with
+\cmdbs{ref}.
+\end{itemize}
+\begin{minipage}{0.55\linewidth}
+    \includegraphics[width=0.5\linewidth]{figs/float_basic.png}
+\end{minipage}
+\begin{minipage}{0.35\linewidth}
+    \includegraphics[width=\textwidth,clip,trim=2in 5in 3in 1in]{figs/media-graphics.pdf}
+\end{minipage}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Tables}
-% \begin{frame}[fragile]{\insertsubsection}
-% \begin{itemize}
-% \item Tables in \LaTeX{} take some getting used to.
-% \item Use the \bftt{tabular} environment from the \bftt{tabularx} package.
-% \item The argument specifies column alignment --- \textbf{l}eft, \textbf{r}ight, \textbf{r}ight.
-% \begin{exampletwouptiny}
-% \begin{tabular}{lrr}
-% Item   & Qty & Unit \$ \\
-% Widget & 1   & 199.99  \\
-% Gadget & 2   & 399.99  \\
-% Cable  & 3   & 19.99   \\
-% \end{tabular}
-% \end{exampletwouptiny}
-% \item It also specifies vertical lines; use \cmdbs{hline} for horizontal lines.
-% \begin{exampletwouptiny}
-% \begin{tabular}{|l|r|r|} \hline
-% Item   & Qty & Unit \$ \\\hline
-% Widget & 1   & 199.99  \\
-% Gadget & 2   & 399.99  \\
-% Cable  & 3   & 19.99   \\\hline
-% \end{tabular}
-% \end{exampletwouptiny}
-% \item Use an ampersand \keystrokebftt{\&} to separate columns and a double backslash \keystrokebftt{\bs}\keystrokebftt{\bs} to start a new row (like in the \bftt{align*} environment that we saw in part 1).
-% \end{itemize}
-% \end{frame}
+\tiny{Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \addtocontents{toc}{\newpage}
-% \section{Bibliographies}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tables}
+\begin{frame}[fragile]{\insertsubsection}
+\begin{itemize}
+\item Tables in \LaTeX{} take some getting used to.
+\item Use the \bftt{tabular} environment from the \bftt{tabularx} package.
+\item The argument specifies column alignment --- \textbf{l}eft, \textbf{r}ight, \textbf{r}ight.
+\begin{figure}
+    % \centering
+    \begin{minipage}{0.5\textwidth}
+        \begin{lstlisting}
+\begin{tabular}{lrr}
+    Item   & Qty & Unit \$ \\
+    Widget & 1   & 199.99  \\
+    Gadget & 2   & 399.99  \\
+    Cable  & 3   & 19.99   \\
+\end{tabular}
+        \end{lstlisting}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+        \begin{tabular}{lrr}
+        Item   & Qty & Unit \$ \\
+        Widget & 1   & 199.99  \\
+        Gadget & 2   & 399.99  \\
+        Cable  & 3   & 19.99   \\
+        \end{tabular}
+    \end{minipage}
+\end{figure}
+\item It also specifies vertical lines; use \cmdbs{hline} for horizontal lines.
+\begin{figure}
+    % \centering
+    \begin{minipage}{0.5\textwidth}
+        \begin{lstlisting}
+\begin{tabular}{|l|r|r|} \hline
+    Item   & Qty & Unit \$ \\\hline
+    Widget & 1   & 199.99  \\
+    Gadget & 2   & 399.99  \\
+    Cable  & 3   & 19.99   \\\hline
+\end{tabular}
+        \end{lstlisting}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+        \begin{tabular}{|l|r|r|} \hline
+            Item   & Qty & Unit \$ \\\hline
+            Widget & 1   & 199.99  \\
+            Gadget & 2   & 399.99  \\
+            Cable  & 3   & 19.99   \\\hline
+        \end{tabular}
+    \end{minipage}
+\end{figure}
+\item Use an ampersand \keystrokebftt{\&} to separate columns and a double backslash \keystrokebftt{\bs}\keystrokebftt{\bs} to start a new row (like in the \bftt{align*} environment that we saw in part 1).
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addtocontents{toc}{\newpage}
+\section{Bibliographies}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -394,36 +433,56 @@
 % \end{multicols}
 % \end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{bib\TeX}
-% \begin{frame}[fragile]{\insertsubsection{} 1}
-% \begin{itemize}
-% \item Put your references in a \bftt{.bib} file in `bibtex' database format:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{bib\TeX}
+\begin{frame}[fragile]{\insertsubsection{} 1}
+\begin{itemize}
+\item Put your references in a \bftt{.bib} file in `bibtex' database format:
 % \inputminted[fontsize=\scriptsize,frame=single]{latex}{bib-example.bib}
-% \item Most reference managers can export to bibtex format.
-% \end{itemize}
-% \end{frame}
+\begin{lstlisting}
+@Article{Jacobson1999Towards,
+author = {Van Jacobson},
+title = {Towards the Analysis of Massive Multiplayer Online
+        Role-Playing Games},
+journal = {Journal of Ubiquitous Information},
+Month = jun,
+Year = 1999,
+Volume = 6,
+Pages = {75--83}}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}[fragile]{\insertsubsection{} 2}
-% \begin{itemize}
-% \item Each entry in the \bftt{.bib} file has a \emph{key} that you can use to
-% reference it in the document. For example, \bftt{Jacobson1999Towards} is the key for this article:
-% \begin{minted}[fontsize=\small,frame=single]{latex}
-% @Article{Jacobson1999Towards,
-%   author = {Van Jacobson},
-%   ...
-% }
-% \end{minted}
-% \item It's a good idea to use a key based on the name, year and title.
-% \item \LaTeX{} can automatically format your in-text citations and generate a
-% list of references; it knows most standard styles, and you can design your own.
-% \end{itemize}
-% \end{frame}
+@InProceedings{Brooks1997Methodology,
+author = {Fredrick P. Brooks and John Kubiatowicz and
+        Christos Papadimitriou},
+title = {A Methodology for the Study of the
+        Location-Identity Split},
+booktitle = {Proceedings of OOPSLA},
+Month = jun,
+Year = 1997}
+\end{lstlisting}
+\item Most reference managers can export to bibtex format.
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{\insertsubsection{} 2}
+\begin{itemize}
+\item Each entry in the \bftt{.bib} file has a \emph{key} that you can use to
+reference it in the document. For example, \bftt{Jacobson1999Towards} is the key for this article:
+\begin{lstlisting}
+@Article{Jacobson1999Towards,
+  author = {Van Jacobson},
+  ...
+}
+\end{lstlisting}
+\item It's a good idea to use a key based on the name, year and title.
+\item \LaTeX{} can automatically format your in-text citations and generate a
+list of references; it knows most standard styles, and you can design your own.
+\end{itemize}
+\end{frame}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -466,10 +525,10 @@
 % \end{enumerate}
 % \end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{What's Next?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{What's Next?}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -480,98 +539,111 @@
 % \end{multicols}
 % \end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{More Neat Things}
-% \begin{frame}[fragile]{\insertsubsection}
-% \begin{itemize}
-% \item Add the \cmdbs{tableofcontents} command to generate a table of contents
-% from the \cmdbs{section} commands.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{More Neat Things}
+\begin{frame}[fragile]{\insertsubsection}
+\begin{itemize}
+\item Add the \cmdbs{tableofcontents} command to generate a table of contents
+from the \cmdbs{section} commands.
 
-% \item Change the \cmdbs{documentclass} to
-% \mint{latex}!\documentclass{scrartcl}!
-% or
-% \mint{latex}!\documentclass[12pt]{IEEEtran}!
+\item Change the \cmdbs{documentclass} to
+\verb|\documentclass{scrartcl}|
+or
+\verb|\documentclass[12pt]{IEEEtran}|
 
-% \item Define your own command for a complicated equation:
-% \begin{exampletwouptiny}
-% \newcommand{\rperf}{%
-%   \rho_{\text{perf}}}
-% $$
-% \rperf = {\bf c}'{\bf X} + \varepsilon
-% $$
-% \end{exampletwouptiny}
-% \end{itemize}
-% \end{frame}
+\item Define your own command for a complicated equation:
+\begin{figure}
+    % \centering
+    \begin{minipage}{0.5\textwidth}
+        \begin{lstlisting}          
+\newcommand{\rperf}{%
+\rho_{\text{perf}}}
+$$
+\rperf = {\bf c}'{\bf X} + \varepsilon
+$$
+        \end{lstlisting}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}      
+\newcommand{\rperf}{%
+\rho_{\text{perf}}}
+$$
+\rperf = {\bf c}'{\bf X} + \varepsilon
+$$
+    \end{minipage}
+\end{figure}
+\end{itemize}
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{More Neat Packages}
-% \begin{frame}{\insertsubsection}
-% \begin{itemize}
-% \item \bftt{beamer}: for presentations (like this one!)
-% \item \bftt{todonotes}: comments and TODO management
-% \item \bftt{tikz}: make amazing graphics
-% \item \bftt{pgfplots}: create graphs in \LaTeX
-% \item \bftt{listings}: source code printer for \LaTeX
-% \item \bftt{spreadtab}: create spreadsheets in \LaTeX
-% \item \bftt{gchords}, \bftt{guitar}: guitar chords and tabulature
-% \item \bftt{cwpuzzle}: crossword puzzles
-% \end{itemize}
-% See \url{https://www.overleaf.com/latex/examples} and \url{http://texample.net}
-% for examples of (most of) these packages.
-% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{More Neat Packages}
+\begin{frame}{\insertsubsection}
+\begin{itemize}
+\item \bftt{beamer}: for presentations (like this one!)
+\item \bftt{todonotes}: comments and TODO management
+\item \bftt{tikz}: make amazing graphics
+\item \bftt{pgfplots}: create graphs in \LaTeX
+\item \bftt{listings}: source code printer for \LaTeX
+\item \bftt{spreadtab}: create spreadsheets in \LaTeX
+\item \bftt{gchords}, \bftt{guitar}: guitar chords and tabulature
+\item \bftt{cwpuzzle}: crossword puzzles
+\end{itemize}
+See \url{https://www.overleaf.com/latex/examples} and \url{http://texample.net}
+for examples of (most of) these packages.
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Installing \LaTeX{}}
-% \begin{frame}{\insertsubsection}
-% \begin{itemize}
-% \item To run \LaTeX{} on your own computer, you'll want to use a \LaTeX{}
-% \emph{distribution}. A distribution includes a \bftt{latex} program
-% and (typically) several thousand packages.
-% \begin{itemize}
-% \item On Windows: \href{http://miktex.org/}{Mik\TeX} or \href{http://tug.org/texlive/}{\TeX Live}
-% \item On Linux: \href{http://tug.org/texlive/}{\TeX Live}
-% \item On Mac: \href{http://tug.org/mactex/}{Mac\TeX}
-% \end{itemize}
-% \item You'll also want a text editor with \LaTeX{} support. See \url{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors} for a list of (many) options.
-% \item You'll also have to know more about how \bftt{latex} and its related tools
-% work --- see the resources on the next slide.
-% \end{itemize}
-% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Installing \LaTeX{}}
+\begin{frame}{\insertsubsection}
+\begin{itemize}
+\item To run \LaTeX{} on your own computer, you'll want to use a \LaTeX{}
+\emph{distribution}. A distribution includes a \bftt{latex} program
+and (typically) several thousand packages.
+\begin{itemize}
+\item On Windows: \href{http://miktex.org/}{Mik\TeX} or \href{http://tug.org/texlive/}{\TeX Live}
+\item On Linux: \href{http://tug.org/texlive/}{\TeX Live}
+\item On Mac: \href{http://tug.org/mactex/}{Mac\TeX}
+\end{itemize}
+\item You'll also want a text editor with \LaTeX{} support. See \url{http://en.wikipedia.org/wiki/Comparison_of_TeX_editors} for a list of (many) options.
+\item You'll also have to know more about how \bftt{latex} and its related tools
+work --- see the resources on the next slide.
+\end{itemize}
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Online Resources}
-% \begin{frame}{\insertsubsection}
-% \begin{itemize}
-% \item \href{https://www.overleaf.com/learn}{The Overleaf Learn Wiki} ---
-% hosts these slides, more tutorials and reference material
-% \item \href{http://en.wikibooks.org/wiki/LaTeX}{The \LaTeX{} Wikibook} ---
-% excellent tutorials and reference material.
-% \item \href{http://tex.stackexchange.com/}{\TeX{} Stack Exchange} --- ask
-% questions and get excellent answers incredibly quickly
-% \item \href{http://www.latex-community.org/}{\LaTeX{} Community} --- a large
-% online forum
-% \item \href{http://ctan.org/}{Comprehensive \TeX{} Archive Network (CTAN)} ---
-% over four thousand packages plus documentation
-% \item Google will usually get you to one of the above.
-% \end{itemize}
-% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Online Resources}
+\begin{frame}{\insertsubsection}
+\begin{itemize}
+\item \href{https://www.overleaf.com/learn}{The Overleaf Learn Wiki} ---
+hosts these slides, more tutorials and reference material
+\item \href{http://en.wikibooks.org/wiki/LaTeX}{The \LaTeX{} Wikibook} ---
+excellent tutorials and reference material.
+\item \href{http://tex.stackexchange.com/}{\TeX{} Stack Exchange} --- ask
+questions and get excellent answers incredibly quickly
+\item \href{http://www.latex-community.org/}{\LaTeX{} Community} --- a large
+online forum
+\item \href{http://ctan.org/}{Comprehensive \TeX{} Archive Network (CTAN)} ---
+over four thousand packages plus documentation
+\item Google will usually get you to one of the above.
+\end{itemize}
+\end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}
-% \begin{center}
-% Thanks, and happy \TeX{}ing!
-% \end{center}
-% \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{center}
+Thanks, and happy \TeX{}ing!
+\end{center}
+\end{frame}
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
