@@ -1,0 +1,32 @@
+\frametitle{\insertsubsection }
+\begin{itemize}
+\item Add the \cmdbs{tableofcontents} command to generate a table of contents
+from the \cmdbs{section} commands.
+
+\item Change the \cmdbs{documentclass} to
+\verb|\documentclass{scrartcl}|
+or
+\verb|\documentclass[12pt]{IEEEtran}|\\
+(Use templates!)
+
+\item Define your own command for a complicated equation:
+\begin{figure}
+    % \centering
+    \begin{minipage}{0.5\textwidth}
+        \begin{lstlisting}
+\newcommand{\rperf}{%
+\rho_{\text{perf}}}
+$$
+\rperf = {\bf c}'{\bf X} + \varepsilon
+$$
+        \end{lstlisting}
+    \end{minipage}
+    \begin{minipage}{0.4\textwidth}
+\newcommand{\rperf}{%
+\rho_{\text{perf}}}
+$$
+\rperf = {\bf c}'{\bf X} + \varepsilon
+$$
+    \end{minipage}
+\end{figure}
+\end{itemize}

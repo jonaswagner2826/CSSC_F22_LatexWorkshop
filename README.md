@@ -32,16 +32,19 @@ https://www.latextemplates.com/
 
 
 ## Presentation
-The introductory presentation is primarily taken from [this github repository](https://github.com/jdleesmiller/latex-course) under a permissive MIT license.
+The introductory presentation is adapted from [this github repository](https://github.com/jdleesmiller/latex-course) under a permissive MIT license.
 
-We will introduce the absolute basics of using LaTeX, mathimatic typesettings, environments and packages.
-Then we will disscuss document structures with figures, refrences, and custom commands for creating reports from tempates.
-We will then touch on advanced capabvilities like creating presentations or posters with Beamer or diagrams and figures using TikZ.
-Ultimently we will ensure everyone is pointed to the resources to impliment whatever they want to create with LaTeX.
+We will introduce the absolute basics of using LaTeX, mathematic typesetting, environments and packages.
+Then we will discuss document structures with figures, references, and custom commands for creating reports (or other documents) from templates.
+With time permitted, we will then touch on advanced capabilities like creating presentations or posters with Beamer or diagrams and figures using TikZ.
+Ultimately, we will ensure everyone is pointed to the resources to implement whatever they want to create with LaTeX.
 
+## Q&A
+Following the presentation, a question and answer session will be held alongside the main workshop.
+Questions will be fielded from Teams messages and from members of the audience.
 
 ## Walkthrough
 For begineers, we will be starting by completing Overleaf's [Learn LaTeX in 30 Miniutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) tutorial.
 
-For thoose beyound the basics, we'll help people progress on their own projects or more advanced features from templates.
+We will assist those already comfortable with the fundamentals progress on their own projects or by gaining new skills using templates, overleaf documentation, and other online resources.
 

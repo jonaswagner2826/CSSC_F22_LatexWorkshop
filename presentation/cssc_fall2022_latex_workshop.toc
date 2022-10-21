@@ -1,0 +1,21 @@
+\beamer@sectionintoc {1}{What is \LaTeX {}?}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Quick Tips}{7}{0}{1}
+\beamer@sectionintoc {2}{Using \LaTeX {} for Math}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Typesetting Mathematics}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Extended \LaTeX }{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{amsmath Package}{17}{0}{2}
+\beamer@sectionintoc {3}{Structured Documents}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{Title and Abstract}{20}{0}{3}
+\beamer@subsectionintoc {3}{2}{Sections}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Graphics}{22}{0}{3}
+\beamer@subsectionintoc {3}{4}{Floats}{24}{0}{3}
+\beamer@subsectionintoc {3}{5}{Tables}{25}{0}{3}
+\par \vfil \penalty -\@M 
+\beamer@sectionintoc {4}{Bibliographies}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{bib\TeX }{27}{0}{4}
+\beamer@sectionintoc {5}{What's Next?}{29}{0}{5}
+\beamer@subsectionintoc {5}{1}{More Neat Things}{30}{0}{5}
+\beamer@subsectionintoc {5}{2}{More Neat Packages}{31}{0}{5}
+\beamer@subsectionintoc {5}{3}{Installing \LaTeX {}}{32}{0}{5}
+\beamer@subsectionintoc {5}{4}{Online Resources}{33}{0}{5}

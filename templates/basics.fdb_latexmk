@@ -1,0 +1,17 @@
+# Fdb version 3
+["pdflatex"] 1666371543 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/DSC&CSSC/CSSC_F22_LatexWorkshop/templates/basics.tex" "basics.pdf" "basics" 1666371547
+  "basics.aux" 1666371547 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "basics.tex" 1666371535 101 4ad8b355fc3e00cd6e64e088f05a8a3d ""
+  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/DSC&CSSC/CSSC_F22_LatexWorkshop/templates/basics.tex" 1666371535 101 4ad8b355fc3e00cd6e64e088f05a8a3d ""
+  "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1630538426 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2021/texmf-dist/tex/latex/base/article.cls" 1630541175 20144 0fe9067680219956678b52f12bdce8ee ""
+  "c:/texlive/2021/texmf-dist/tex/latex/base/size10.clo" 1630541175 8448 05e1c6a8fc5db344ed9d7aeb299acbce ""
+  "c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1630541114 27662 df2ac0cbce6c3f309d48d78e7c627ccb ""
+  "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1630541083 40042 fe981136cbb5f3715ab1b0e46e3d3892 ""
+  "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1630544527 5227315 db342e42f9ec81617c49ad0feff4da83 ""
+  "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1630544666 2797773 0a4f2f027c3c660d286f461b7d600241 ""
+  "c:/texlive/2021/texmf.cnf" 1630544502 713 e69b156964470283e0530f5060668171 ""
+  (generated)
+  "basics.pdf"
+  "basics.log"
+  "basics.aux"

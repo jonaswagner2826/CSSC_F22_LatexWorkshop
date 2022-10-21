@@ -104,65 +104,18 @@
 %     \end{itemize}
 %     \end{frame}
 
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     \begin{frame}{End of Part 1}
-%     \begin{itemize}
-%     \item Congrats! You've already learned how to \ldots
-%     \begin{itemize}
-%     \item Typeset text in \LaTeX.
-%     \item Use lots of different commands.
-%     \item Handle errors when they arise.
-%     \item Typeset some beautiful mathematics.
-%     \item Use several different environments.
-%     \item Load packages.
-%     \end{itemize}
-%     \item That's amazing!
-%     \item In Part 2, we'll see how to use \LaTeX{} to write structured documents
-%     with sections, cross references, figures, tables and bibliographies. See you
-%     then!
-%     \end{itemize}
-%     \end{frame}
 
+
+
+
+%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Structured Documents}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}{Outline}
-% \begin{multicols}{2}
-% \tableofcontents[currentsection]
-% \end{multicols}
-% \end{frame}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}{\insertsection}
-% \begin{itemize}
-% \item In Part 1, we learned about commands and environments for typesetting text
-% and mathematics.
-% \item Now, we'll learn about commands and environments for structuring
-% documents.
-% \item You can try out the new commands in Overleaf:
-% \end{itemize}
-% \vskip 2em
-% \begin{center}
-% \fbox{\href{\wlnewdoc{basics.tex}}{%
-% Click here to open the example document in \wllogo{}}}
-% \\[1ex]\scriptsize{}
-% For best results, please use \href{http://www.google.com/chrome}{Google Chrome} or a recent \href{http://www.mozilla.org/en-US/firefox/new/}{FireFox}.
-% \end{center}
-% \vskip 2ex
-% \begin{itemize}
-% \item Let's get started!
-% \end{itemize}
-% \end{frame}
 
 
 
@@ -369,7 +322,7 @@ presentation for links to more information.
 \begin{frame}[fragile]{\insertsubsection}
 \begin{itemize}
 \item Tables in \LaTeX{} take some getting used to.
-\item Use the \bftt{tabular} environment from the \bftt{tabularx} package.
+% \item Use the \bftt{tabular} environment from the \bftt{tabularx} package.
 \item The argument specifies column alignment --- \textbf{l}eft, \textbf{r}ight, \textbf{r}ight.
 \begin{figure}
     % \centering
@@ -414,7 +367,7 @@ presentation for links to more information.
         \end{tabular}
     \end{minipage}
 \end{figure}
-\item Use an ampersand \keystrokebftt{\&} to separate columns and a double backslash \keystrokebftt{\bs}\keystrokebftt{\bs} to start a new row (like in the \bftt{align*} environment that we saw in part 1).
+\item Use an ampersand \keystrokebftt{\&} to separate columns and a double backslash \keystrokebftt{\bs}\keystrokebftt{\bs} to start a new row.
 \end{itemize}
 \end{frame}
 
@@ -551,7 +504,8 @@ from the \cmdbs{section} commands.
 \item Change the \cmdbs{documentclass} to
 \verb|\documentclass{scrartcl}|
 or
-\verb|\documentclass[12pt]{IEEEtran}|
+\verb|\documentclass[12pt]{IEEEtran}|\\
+(Use templates!)
 
 \item Define your own command for a complicated equation:
 \begin{figure}
@@ -590,6 +544,7 @@ $$
 \item \bftt{spreadtab}: create spreadsheets in \LaTeX
 \item \bftt{gchords}, \bftt{guitar}: guitar chords and tabulature
 \item \bftt{cwpuzzle}: crossword puzzles
+% \item \bftt{}
 \end{itemize}
 See \url{https://www.overleaf.com/latex/examples} and \url{http://texample.net}
 for examples of (most of) these packages.
