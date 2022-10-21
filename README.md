@@ -32,7 +32,7 @@ https://www.latextemplates.com/
 
 
 ## Presentation
-presentation/cssc_fall2022_latex_workshop.pdf
+[presentation/cssc_fall2022_latex_workshop.pdf](presentation/cssc_fall2022_latex_workshop.pdf)
 
 The introductory presentation is adapted from [this github repository](https://github.com/jdleesmiller/latex-course) under a permissive MIT license.
 
